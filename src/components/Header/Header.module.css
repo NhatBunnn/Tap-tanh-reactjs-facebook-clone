@@ -1,0 +1,28 @@
+.header {
+}
+
+.logo {
+}
+
+.search {
+  width: 240px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .icon {
+  padding-left: 12px;
+  font-size: 16px;
+}
+
+.search input {
+  width: 100%;
+  padding: 7px 8px 9px 8px;
+  outline: none;
+  background: none;
+  border: none;
+}
