@@ -19,9 +19,9 @@
 
 /* COMMON */
 .dashed-line {
-  border-top: 1px dashed #000; /* Đường đứt với độ dày 1px và màu đen */
-  width: 100%; /* Đảm bảo đường đứt chiếm toàn bộ chiều rộng của phần tử cha */
-  margin: 20px 0; /* Để cách đường đứt một khoảng 20px ở trên và dưới */
+  border-top: 1px dashed #000;
+  width: 100%;
+  margin: 20px 0;
 }
 
 .fa-padding-left-5px {
@@ -92,19 +92,18 @@
 
 /* COLOR - UI (MAYBE CHANGE)*/
 :root {
-  --white-UIColor: #fff;
-}
+  /* UI colors */
+  --ui-white: #ffffff;
+  --ui-black: #000000;
+  --ui-background: #f2f4f7;
+  --ui-hover: #e8ecf0;
 
-:root {
-  --mainColor-UIColor: #afb42b;
-}
+  --ui-blue: #0866ff;
 
-:root {
-  --mainDarkColor-UIColor: rgb(126, 130, 23);
-}
-
-:root {
-  --skillSection-lightBlack-UIColor: #f4f5f7;
+  /* Text colors */
+  --text-primary: #000000;
+  --text-blue: #0866ff;
+  --text-secondary: rgb(101, 104, 108);
 }
 
 /* COLOR - TEXT (MAYBE CHANGE)*/
@@ -165,7 +164,17 @@ body {
   /* height: 3000px; */
   background-color: #f4f5f7;
   font-family: var(--font-family) !important;
-  font-size: 16px !important;
+  font-size: 15px;
   color: var(--unchanged-mainBlack-textColor);
   scroll-behavior: smooth;
+}
+
+html {
+  font-size: 15px;
+}
+
+body ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }

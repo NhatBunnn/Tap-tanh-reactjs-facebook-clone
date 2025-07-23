@@ -1,0 +1,34 @@
+.userItem {
+  align-items: center;
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.userItem:hover {
+  background: var(--ui-background);
+}
+
+.content {
+  padding: 0 6px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.notification {
+  font-size: 13px;
+}
+
+.myIcon {
+  font-size: 9px;
+  padding-right: 8px;
+  color: rgb(79, 117, 255);
+  line-height: 100%;
+}
+
+.close-button {
+  font-size: 20px;
+  cursor: pointer;
+}
