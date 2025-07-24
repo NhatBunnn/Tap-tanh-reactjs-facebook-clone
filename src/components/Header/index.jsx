@@ -3,6 +3,7 @@ import { Image, Images } from "../../assets/images/index";
 import classNames from "classnames/bind";
 import Search from "../Search";
 import { Svg, Svgs } from "../../assets/svgs";
+import AccountMenu from "../Menu/AccountMenu";
 
 const c = classNames.bind(styles);
 
@@ -32,7 +33,7 @@ function Header() {
         </li>
       </ul>
       {/* userActions */}
-      <ul className={c(styles.userActions, "d-flex", "px-0")}>
+      <ul className={c("userActions", "d-flex", "px-0")}>
         <li className={c()}>
           <Svg>{Svgs.menu}</Svg>
         </li>
@@ -51,6 +52,9 @@ function Header() {
             style={{ borderRadius: "100px" }}
           />
         </li>
+        <div className={c("menus")}>
+          <AccountMenu />
+        </div>
       </ul>
     </header>
   );
