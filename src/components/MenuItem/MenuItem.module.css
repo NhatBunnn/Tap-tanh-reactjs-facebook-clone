@@ -1,0 +1,30 @@
+.MenuItem {
+  background-color: var(--ui-white);
+  margin: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.MenuItem:hover {
+  background-color: var(--ui-hover);
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.circle-bg {
+  width: 36px;
+  height: 36px;
+  background: var(--ui-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin: 6px;
+}
+
+.title {
+  font-weight: bold;
+  padding: 6px;
+}

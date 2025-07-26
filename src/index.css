@@ -24,6 +24,12 @@
   margin: 20px 0;
 }
 
+.line {
+  border-top: 1px solid var(--ui-secondary);
+  width: 100%;
+  margin: 10px 0;
+}
+
 .fa-padding-left-5px {
   padding-left: 5px;
 }
@@ -96,6 +102,7 @@
   --ui-white: #ffffff;
   --ui-black: #000000;
   --ui-background: #f2f4f7;
+  --ui-secondary: #e2e5e9;
   --ui-hover: #e8ecf0;
 
   --ui-blue: #0866ff;

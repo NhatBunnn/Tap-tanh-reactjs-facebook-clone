@@ -88,7 +88,7 @@ function Search() {
           <input
             type="text"
             placeholder="Search Facebook"
-            value={searchValue}
+            defaultValue={searchValue}
             onFocus={() => setShowResult(true)}
           />
         </div>
@@ -133,7 +133,7 @@ function Search() {
             {searchResult.map((result) => {
               return (
                 <li key={result.id}>
-                  <UserItem data={result} onClose={handleClose} />
+                  <UserItem data={result} onClose={handleClose} noti="1 new" />
                 </li>
               );
             })}

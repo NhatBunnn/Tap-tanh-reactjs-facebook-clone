@@ -6,13 +6,13 @@ import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 const c = classNames.bind(styles);
 
-function UserItem({ data, onClose }) {
+function UserItem({ data, onClose, noti, className }) {
   const handleClick = () => {
     if (onClose) onClose(data.id);
   };
 
   return (
-    <div className={c("userItem", "d-flex")} data-id={data.id}>
+    <div className={c("userItem", "d-flex", className)} data-id={data.id}>
       <Image
         className={c("avatar")}
         width="36px"
@@ -24,15 +24,19 @@ function UserItem({ data, onClose }) {
       <div className={c("content")}>
         <div className={c("username")}>{data.full_name}</div>
         <div className={c("notification")}>
-          <FontAwesomeIcon icon={faCircle} className={c("myIcon")} />1 new
+          {noti && <FontAwesomeIcon icon={faCircle} className={c("myIcon")} />}
+          {noti}
         </div>
       </div>
-      <div
-        className={c("close-button", "flex-item-right")}
-        onClick={handleClick}
-      >
-        ×
-      </div>
+      {onClose && (
+        <div
+          className={c("close-button", "flex-item-right")}
+          onClick={handleClick}
+        >
+          ×
+        </div>
+      )}
+
       <div className="notification-status"></div>
     </div>
   );

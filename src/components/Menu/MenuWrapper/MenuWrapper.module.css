@@ -1,0 +1,10 @@
+/* MenuWrapper.module.css */
+.MenuWrapper {
+  background-color: var(--ui-white) !important;
+  min-height: 100px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  flex-direction: column;
+}
